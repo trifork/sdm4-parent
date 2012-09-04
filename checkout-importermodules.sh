@@ -1,5 +1,4 @@
 #!/bin/sh
-git clone git@github.com:trifork/sdm4-core.git
 git clone git@github.com:trifork/sdm4-vagrant-maven-plugin.git
 git clone git@github.com:trifork/sdm4-testutils.git
 git clone git@github.com:trifork/sdm4-autorisationimporter.git
