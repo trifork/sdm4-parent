@@ -2,5 +2,9 @@
 <module xmlns="urn:jboss:module:1.0" name="sdm4.config.<%=modulename%>">
     <resources>
         <resource-root path="."/>
+        <resource-root path="rowset.jar"/>
     </resources>
+    <dependencies>
+        <module name="javax.sql"/>
+    </dependencies>
 </module>

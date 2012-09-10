@@ -22,10 +22,15 @@ define jboss7as::importermodule( $importername = '') {
 		content => template("jboss7as/log4j-nspslalog-importer.properties"),
 	}
 
+    file {"/pack/jboss/modules/sdm4/config/${modulename}/main/rowset.jar":
+        ensure => present,
+        source => "puppet:///modules/jboss7as/rowset.jar",
+        require => File["/pack/jboss/modules/sdm4/config/${modulename}/main"]
+    }
+
 	# JBoss module
    	file {["/pack/jboss/modules/sdm4/config/${modulename}", "/pack/jboss/modules/sdm4/config/${modulename}/main"]:
         ensure => directory,
-        owner => "jboss",
         require => File["/pack/jboss"],
     }
 
@@ -38,6 +43,4 @@ define jboss7as::importermodule( $importername = '') {
 		content => template("jboss7as/sdm-importer-module.xml"),
 		require => File["/pack/jboss/modules/sdm4/config/${modulename}/main"],
 	}
-
-
 }
