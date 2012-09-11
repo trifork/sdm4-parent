@@ -4,14 +4,15 @@
 
     <groupId>dk.nsi.stamdata4</groupId>
     <artifactId>sdm-parent</artifactId>
-    <version>4.2-SNAPSHOT</version>
+    <version>4.2</version>
     <packaging>pom</packaging>
 
     <scm>
         <url>scm:git:git@github.com:trifork/sdm4-parent</url>
         <connection>scm:git:git@github.com:trifork/sdm4-parent.git</connection>
         <developerConnection>scm:git:git@github.com:trifork/sdm4-parent.git</developerConnection>
-    </scm>
+      <tag>sdm-parent-4.2</tag>
+  </scm>
     <issueManagement>
         <system>JIRA</system>
         <url>https://jira.trifork.com/</url>
