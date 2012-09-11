@@ -169,6 +169,14 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <releaseProfiles>handle-vagrant-vms</releaseProfiles>
+                    <goals>deploy</goals> <!-- skips site-deploy -->
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -258,6 +266,7 @@
                                     <executable>vagrant</executable>
                                     <arguments>
                                         <argument>up</argument>
+                                        <argument>--no-provision</argument>
                                     </arguments>
                                 </configuration>
                             </execution>
