@@ -183,6 +183,42 @@
 
     <profiles>
         <profile>
+            <id>check-license</id>
+            <activation>
+                <file>
+                    <!-- activate profile only in modules which seems to be actually contain source files -->
+                    <exists>${basedir}/src/main/java</exists>
+                </file>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.mycila.maven-license-plugin</groupId>
+                        <artifactId>maven-license-plugin</artifactId>
+                        <version>1.9.0</version>
+                        <configuration>
+                            <strictCheck>true</strictCheck>
+                            <header>${basedir}/standardheader.txt</header>
+                            <failIfMissing>true</failIfMissing>
+                            <aggregate>true</aggregate>
+                            <includes>
+                                <include>**/src/**/*.java</include>
+                            </includes>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
             <id>deploy-integrationtest-war</id>
             <activation>
                 <file>
