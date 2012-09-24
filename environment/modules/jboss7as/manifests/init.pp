@@ -88,6 +88,8 @@ class jboss7as() {
 	
 	jboss7as::importermodule { "yderimporter": }
 	
+	jboss7as::importermodule { "ydelseimporter": }
+
 	jboss7as::importermodule { "vitaminimporter": }
 	
 	jboss7as::importermodule { "vaccinationimporter": }
