@@ -10,3 +10,4 @@ git clone git@github.com:trifork/sdm4-takstimporter.git
 git clone git@github.com:trifork/sdm4-yderimporter.git
 git clone git@github.com:trifork/sdm4-doseringimporter.git
 git clone git@github.com:trifork/sdm4-vitaminimporter.git
+git clone git@github.com:trifork/sdm4-vaccinationimporter.git
