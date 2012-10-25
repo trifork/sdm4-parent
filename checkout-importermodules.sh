@@ -12,3 +12,5 @@ git clone git@github.com:trifork/sdm4-ydelseimporter.git
 git clone git@github.com:trifork/sdm4-doseringimporter.git
 git clone git@github.com:trifork/sdm4-vitaminimporter.git
 git clone git@github.com:trifork/sdm4-vaccinationimporter.git
+git clone git@github.com:trifork/sdm4-lprimporter.git
+git clone git@github.com:trifork/sdm4-refhostimporter.git
