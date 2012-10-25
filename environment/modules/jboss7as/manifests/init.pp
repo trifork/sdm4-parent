@@ -93,4 +93,8 @@ class jboss7as() {
 	jboss7as::importermodule { "vitaminimporter": }
 	
 	jboss7as::importermodule { "vaccinationimporter": }
+
+	jboss7as::importermodule { "lprimporter": }
+
+	jboss7as::importermodule { "refhostimporter": }
 }
