@@ -106,6 +106,9 @@
                         <prepared-statement-cache-size>100</prepared-statement-cache-size>
                         <share-prepared-statements/>
                     </statement>
+                    <validation>
+                        <valid-connection-checker>com.mysql.jdbc.integration.jboss.MysqlValidConnectionChecker</valid-connection-checker>
+                    </validation>
                 </datasource>
                 <drivers>
                     <driver name="h2" module="com.h2database.h2">
