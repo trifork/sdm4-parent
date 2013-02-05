@@ -97,4 +97,6 @@ class jboss7as() {
 	jboss7as::importermodule { "lprimporter": }
 
 	jboss7as::importermodule { "refhostimporter": }
+
+    jboss7as::importermodule { "tilskudsblanketimporter": }
 }
