@@ -99,4 +99,6 @@ class jboss7as() {
 	jboss7as::importermodule { "refhostimporter": }
 
     jboss7as::importermodule { "tilskudsblanketimporter": }
+
+    jboss7as::importermodule { "testdataimporter": }
 }

@@ -112,6 +112,18 @@
                         <background-validation-millis>10000</background-validation-millis>
                     </validation>
                 </datasource>
+                <datasource jndi-name="java:/TESTGENSRC" pool-name="MySQLTestgenPool" enabled="true" jta="true" use-java-context="true" use-ccm="true">
+                    <connection-url>jdbc:mysql://localhost:3306/sdm_warehouse</connection-url>
+                    <driver>mysql</driver>
+                    <pool>
+                        <min-pool-size>0</min-pool-size>
+                        <max-pool-size>1</max-pool-size>
+                    </pool>
+                    <security>
+                        <user-name>sdm4</user-name>
+                        <password>sdm4</password>
+                    </security>
+                </datasource>
                 <drivers>
                     <driver name="h2" module="com.h2database.h2">
                         <xa-datasource-class>org.h2.jdbcx.JdbcDataSource</xa-datasource-class>
